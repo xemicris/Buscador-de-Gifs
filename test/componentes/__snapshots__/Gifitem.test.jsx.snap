@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifItem. /> debe hacer match con el snapshot 1`] = `
+<div>
+  <div
+    class="carta"
+  >
+    <img
+      alt="Saint-Seiya"
+      class="imagen"
+      src="https://localhost/saintseiya.jpg"
+    />
+    <p
+      class="titulo-categoria"
+    >
+      Saint-Seiya
+    </p>
+  </div>
+</div>
+`;

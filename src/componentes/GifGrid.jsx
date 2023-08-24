@@ -2,17 +2,17 @@ import { GifItem } from "./GifItem";
 import { useFetchGifs } from "../hooks/useFetchGifs";
 
 //Componente que crea la estructura de cada categoría
-export const GifGrid = ({categoria}) => {
+export const GifGrid = ({categoria, limite}) => {
 
-  const {imagenes, estaCargando} = useFetchGifs(categoria); 
+  const {imagenes, estaCargando} = useFetchGifs(categoria, limite); 
 
   return (
     <>
-        <h3>{categoria}</h3>
+        <p className="categoria">{categoria}</p>
         {
-          estaCargando ? (<h2>Cargando...</h2>) : null
+          estaCargando ? (<p className="cargando">Cargando...</p>) : null
         }
-        <div className="card-grid">
+        <div className="carta-grid">
           {/* En el paréntesis tras la flecha va el return implícito */}
           {imagenes.map(imagen =>(
               <GifItem 
